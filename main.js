@@ -42,5 +42,10 @@ const footerLinksToggle = () => {
 window.addEventListener('load', () => {
   footerLinksToggle();
 });
+// Making sure the form does not submit when the button is pressed
 
+
+document.querySelector('form').onsubmit = function(){
+  return false
+}
 
